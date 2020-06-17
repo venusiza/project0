@@ -1,126 +1,102 @@
 <DOCTYPE! html>
-<html lang="en">
+
 <head>
-<title> Light Page</title>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<title> Responsive Home page </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
-<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
-<style>
-	table {
-	font-family:arial,sans-serif;
-	border-collapse:collapse;
-	width:100%;
-	}
-	td,th {
-	border:1px solid #dddddd;
-	text-align:left;
-	padding:8px;
-	}
-	tr:nth-child(even){
-	background-color:#dddddd;
-	}
-
-
-  /* Make the image fully responsive */
-  .carousel-inner  img {
-    width: 100%;
-    height: 100%;
-  }
-
-
-</style>
-
+<link rel="stylesheet" href="custome.css">
 </head>
 
+
+
+
 <body>
-
-<ul class="nav  nav-pills">
-
- <li role="presentation"><a href="home.html"> <span> &#127969; </span> Home</a></li>
-  <li role="presentation"class="active" ><a href="#">Lighting</a></li>
-
-  <li role="presentation"><a href="brick.html">Brick</a></li>
-  <li role="presentation"><a href="color.html">Color</a></li>
-    <li role="presentation"><a href="stone.html">Stone</a></li>
-</ul>
-
-
-
-
-
-
-<!--------------------------slideshow------------------------------>
-<div class="container">
-	<h2> Light Selection </h2>
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-	<!-- Indicators----->
-		<ol class="carousel-indicators">
-			<li data-target="myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="myCarousel" data-slide-to="1"  ></li>
-			<li data-target="myCarousel" data-slide-to="2"  ></li>
-		</ol>
-
-<!--wraper for slides---->
-<div class="carousel-inner">
-	<div class="item active">
-		<img src="img/imgT1.jpg" alt="light1" width="1100" height="500" >
-			<div class="carousel-caption">
-				<h3> Frameburg Lighting </h3>
-				<p>Troy Lighting | Alexander Collection | Eight Light Chandelier</p>
-			</div>
-	</div>
-
-	<div class="item">
-		<img src="img/imgT2.jpg" alt="light2" width="1100" height="500">
-		<div class="carousel-caption">
-			<h3> Premier Lighting </h3>
-			  <p>Corbett Lighting | Olivia Collection </p>
-	    </div>
-	</div>
-
-	<div class="item">
-
-		<img src="img/imgT3.jpg" alt="light3" width="1100" height="500">
-		    <div class="carousel-caption">
-				<h3> Corbet Lighting </h3>
-				<p> Framburg Lighting | Liebestraum Collection | Five Light Chandelier</p>
-			</div>
-	</div>
-
+<!----Add text top of the menu navbar---------------------------------->
+<div class="jumbotron" style="margin-bottom:0px;"> 
+<h1> Build Your Home </h1>
+<p> Choose your color , brick ,stone here and make your home more modern!  </p>
 </div>
+<!----------------------------------------------------------------------------->
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" >
+		
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#collapse-venus-target"> 
+		<span class="navbar-toggler-icon"></span>
+		
+		
+		</button>
+
+<div class="collapse navbar-collapse" id="collapse-venus-target"	>	
+	<!---------------------- add name of website or Copmany and logo of the site ------> 	
+		<a class="nav-brand"> <img src="img/home3.png"> </a>
+		<span class="navbar-text"> Better Home Design &#127969; </span> 
+		<!-------------------------------------------------------------------------------->
+			<ul class="navbar-nav">
+			
+			
+				<li class="nav-item">
+					<a class="nav-link" href="#" > Home </a> 
+					
+				</li>
+				
+			
+			
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown-venus-target" href="#" > Lighting
+					<!-----this is for dropdown arrow icon---->
+					<span class="caret"> </span>
+					</a>
+					<!---this is for sub menu -------------------------------------> 
+					<div class="dropdown-menu" aria-labelledby="dropdown-target">
+						<a class="dropdown-item" href="light.html"> Modern Lighting </a>
+						
+						<div class="dropdown-divider"></div>
+						
+						<a class="dropdown-item"  href="light2.html"> Traditional Lighting </a>
+						 
+					
+					</div>
+						<!--end of  sub menu -------------------------------------> 
+				</li>
 
 
 
 
-
-
-
-
-<!------------------------Left and right control --->
-	  <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-	</div>
-</div>
-<!--
-<img src="img/light1.png" alt="light pic not Found!"  >
-<img src="img/light2.png" alt="light pic not Found!"  >
-<img src="img/light3.png" alt="light pic not Found!"  >
-
--->
+		<li class="nav-item">
+					<a class="nav-link" href="color.html" > Color </a> 
+				</li>
+				
+				
+				
+				<li class="nav-item">
+					<a class="nav-link" href="brick.html" > Brick </a> 
+				</li>				
+			
+			
+				<li class="nav-item">
+					<a class="nav-link" href="stone.html" > Stone </a> 
+				</li>				
+			
+			
+			</ul>
+			
+			</div>
+		</nav>
+		<!---------------------------- image as a content-------------------------->
+		
+			<img src="img/home.jpg" class="img-fluid">
+<!--------------------------------------------------------------------------------------->
 </body>
+
+
+
+
 
 </html>
